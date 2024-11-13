@@ -1,21 +1,78 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+# Laravel specific files
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+/.env.backup
 
-# the fuelphp document
-/docs/
+# Laravel 5 & 6
+.phpunit.result.cache
+/.phpunit.result.cache
+/vendor/
+/node_modules/
+/storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+.env.testing
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
+# Composer
+composer.lock
+/vendor/
 
-# dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+# NPM
+node_modules/
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/npm-debug.log
+/yarn-error.log
+yarn-error.log
+
+# Laravel Mix
+/.sass-cache
+/.pnp
+.pnp.js
+
+# IDEs and Editors
+/.idea
+/.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# PHPStorm
+nbproject/private/
+.idea/
+*.iml
+*.iws
+.DS_Store
+*.swp
+.vscode/
+*.code-workspace
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Other
+*.log
+*.cache
+*.env
+*.phpunit.result.cache
+*.phpstorm.meta.php
+*.htaccess
+
+# Node.js
+node_modules/
+/npm-debug.log
+/yarn-debug.log
+yarn-error.log
+package-lock.json
